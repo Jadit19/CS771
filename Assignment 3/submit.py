@@ -16,4 +16,4 @@ def my_predict(df):
     y_pred = model.predict(x_data)
 
     # Return both sets of predictions
-    return (y_pred[:, 0], y_pred[:, 1])
+    return (np.array(y_pred[:, 0]), np.array(y_pred[:, 1]))
