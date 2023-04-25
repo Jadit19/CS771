@@ -9,7 +9,7 @@ def my_predict(df):
     x_data = np.array(df.iloc[:, 1:7].values)
 
     # Load your model file
-    model_file = open("./model.pkl", "rb")
+    model_file = open("./Pickle/knn.pkl", "rb")
     model = pkl.load(model_file)
 
     # Make two sets of predictions, one for O3 and another for NO2
